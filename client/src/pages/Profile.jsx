@@ -1,6 +1,4 @@
-import React from 'react'
 import { useSelector } from 'react-redux'
-
 
 export default function Profile() {
   const { currentUser } = useSelector((state) => state.user)
@@ -15,7 +13,7 @@ export default function Profile() {
         <input id='password' type='password' placeholder='password' className='border p-3 rounded-lg'/>
         <button className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>Update</button>
       </form>
-      <div className='flex justify-between mt-5'>
+      <div className='flex justify-between'>
         <span className='text-red-700 cursor-pointer'>Delete account</span>
         <span className='text-red-700 cursor-pointer'>Sign out</span>
       </div>
