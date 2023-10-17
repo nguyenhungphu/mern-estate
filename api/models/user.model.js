@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 // Create schema
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema(
+    {
     username: {
         type: String, 
         required: true,
@@ -20,7 +21,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "https://static.vecteezy.com/system/resources/thumbnails/020/765/399/small/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
     },
-}, { timestamps: true} );
+}, 
+    { timestamps: true} 
+);
 
 const User = mongoose.model('User', userSchema);
 
