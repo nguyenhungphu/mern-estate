@@ -15,6 +15,7 @@ export const updateUser = async (req, res, next) => {
 
     try {
         if (req.body.password) {
+            // hash password
             req.body.password = bcryptjs.hashSync(req.body.password, 10);
         }
         const updatedUser = await User.findByIdAndUpdate(
@@ -27,6 +28,7 @@ export const updateUser = async (req, res, next) => {
                     avatar: req.body.avatar,
                 },
         }, {new: true}) // add new true to save the latest 
+        // destruct to hide password from json response
         const {password, ...rest} = updatedUser._doc;
 
         res.status(200).json(rest);
