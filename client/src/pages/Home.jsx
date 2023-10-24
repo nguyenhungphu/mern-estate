@@ -56,7 +56,7 @@ export default function Home() {
           home with ease
         </h1>
         <div className="text-gray-400 text-xs sm:text-sm">
-          Phu Estate is the best place to find your next perfect home to live.
+          Your Estate is the best place to find your next perfect home to live.
           <br />
           We have a wide range of properties for you to choose from.
         </div>
