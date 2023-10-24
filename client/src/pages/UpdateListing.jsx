@@ -16,7 +16,6 @@ export default function CreateListing() {
         const data = await res.json();
         setFormData(data);
         if(data.success === false){
-            console.log(data.message);
             return;
         }
     }

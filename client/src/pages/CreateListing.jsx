@@ -27,7 +27,6 @@ export default function CreateListing() {
   });
   const [uploading, setUploading] = useState(false);
   const [imageUploadError, setImageUploadError] = useState(false);
-  console.log(formData)
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const handleImageSubmit = async (e) => {
