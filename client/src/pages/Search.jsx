@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ListingItem from "../components/ListingItem";
 
 export default function Search() {
+  const navigate = useNavigate();
   const [sidebardata, setSidebarData] = useState({
     searchTerm: "",
     type: "all",
@@ -15,9 +16,7 @@ export default function Search() {
   const [loading, setLoading] = useState(false);
   const [listings, setListings] = useState([]);
   const [showMore, setShowMore] = useState(false);
-  const navigate = useNavigate();
 
-console.log(listings)
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
     const searchTermFromUrl = urlParams.get("searchTerm");
