@@ -3,7 +3,7 @@ Real Estate app using MERN and tailwind css
 
 # Release 1.0 - 24/10/2023
 
-# Overview: A place where user can create listings to sell their real estate property and browse nearby property
+# Overview: Offer an environment for customers to sell, buy, and rent with details descriptions of property listings and a seamless end-to-end service
 
 # Site is live and accessible through this link: https://mern-your-esate.onrender.com
 
